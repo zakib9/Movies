@@ -1,9 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import { ref } from 'vue';
-import axios from 'axios';
-
-
 
 const showMenu = ref(false)
 
@@ -52,11 +49,11 @@ const showMenu = ref(false)
     
       <transition 
       enter-active-class="duration-300 ease-out"
-    enter-from-class="transform translate-x-48"
-    enter-to-class="opacity-100"
-    leave-active-class="duration-200 ease-in"
-    leave-from-class="opacity-100"
-    leave-to-class="transform translate-x-48">
+      enter-from-class="transform translate-x-48"
+      enter-to-class="opacity-100"
+      leave-active-class="duration-200 ease-in"
+      leave-from-class="opacity-100"
+      leave-to-class="transform translate-x-48">
         <div v-if="showMenu" class=" fixed top-16 right-0 flex flex-col h-screen w-fit bg-darkModeElements gap-8 p-8 items-center shadow-md text-primary text-xl ">
         
           <ul class="flex flex-col gap-4  justify-center text-lightModeInput ">
