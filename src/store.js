@@ -32,10 +32,14 @@ const getData = async (url) =>{
   });
     return data
   }
-  state.topMovies = await getData('https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/top-250-movies') 
+  
+  async function fetchData() {
+    state.topMovies = await getData('https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/top-250-movies') 
   state.trending = await getData('https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/most-popular-movies')
   state.upCommingTVShows = await getData('https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/upcoming-tv-shows') 
+  }
   
+  fetchData();
 
   export default{
     state: state,

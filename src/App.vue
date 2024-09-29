@@ -81,6 +81,8 @@ const showMenu = ref(false)
             </div>
       </transition>
 
-  <RouterView />
+  <div class=" bg-darkModeBackground min-h-screen">
+    <RouterView />
+  </div>
 </template>
 

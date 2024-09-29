@@ -6,7 +6,7 @@ const store = inject("store")
 </script>
 
 <template>
- <div class=" mt-20 flex flex-col gap-4 bg-darkModeBackground w-full h-full text-white items-start justify-start p-10">
+ <div class=" mt-20 flex flex-col gap-4 bg-darkModeBackground w-full min-h-full text-white items-start justify-start p-10">
   <div class=" flex justify-between">
     <div class="flex flex-col gap-6">
       <h4 class=" text-2xl font-bold">Top Movies</h4>
